@@ -1,0 +1,9 @@
+
+
+DOA_intersecting_sources_mse.m for computing MSE curve vs. SNR in under-determined scenario
+DOA_intersecting_sources_mse_tf_music.m for computing MSE curve in over-determined scenario along with comparison with TF MUSIC
+DOA_intersecting_sources_mse_tf_music_sparse.m for computing MSE curve vs. SNR when 50% samples are randomly removed along with comparison with TF MUSIC
+
+DOA_intersecting_sources.m for illustrating the proposed algorithm in over-determined and under-determined scenario
+DOA_intersecting_sources_tf_music for illustrating the proposed algorithm in over-determined scenario in comparison with TF-MUSCI
+
