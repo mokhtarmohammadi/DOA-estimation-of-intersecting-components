@@ -1,9 +1,4 @@
 function index = findridges_new1(Spec,Specangle,delta)
-%Ridge detection algorithm,i.e., Algorithm 1 in paper:Separation of Overlapped Non-Stationary Signals by Ridge Path Regrouping and Intrinsic Chirp Component Decomposition
-% ,IEEE Sensors journal,2017.
-% The algorithm is originally introduced in the paper: Algorithms for blind components separation and extraction from the time-frequency distribution of their mixture.
-% EURASIP Journal on Advances in Signal Processing, 2004.
-
 
 %Spec£ºTime-Frequency distribution of the signal
 %delta£ºmaximum allowable frequency variation between two consecutive points

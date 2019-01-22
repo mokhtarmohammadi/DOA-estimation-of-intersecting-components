@@ -27,11 +27,6 @@ num=4;
 % ORIGINAL
 fidexmult= extridge_mult_new_modified1(Sig(1:256), num,5);
 figure; plot(t,fidexmult)
-%
-%fidexmult= extridge_mult_new_modified2(Sig(1:256), num,5);
-%figure; plot(t,fidexmult)
-%fidexmult= extridge_mult_new_modified_spec(Sig, num,4);
-%figure; plot(t,fidexmult)
 orderIF = 50; % use the Fourier model to smooth the detected ridge curves£»orderIF1 could be larger than the following orderIF
 bw = SampFreq/60;%
 %bw=10;
@@ -43,14 +38,3 @@ tic
 [findex,interset] = RPRG(fidexmult,thrf);
 toc
 figure; plot(t,fidexmult)
-
-% thrf =10;
-% I = quadtfd(Sig, length(Sig)-1, 1, 'specx',85,'hamm',length(Sig));
-% figure;tfsapl(Sig,I);
-%       [tfd,orienttfd]=HTFD_neww(Sig,2,20,84);
-%     figure; tfsapl(Sig,tfd);
-
-
-%[fidexmult,interset] = RPRG(fidexmult,thrf);
-
-%figure; plot(t,fidexmult)

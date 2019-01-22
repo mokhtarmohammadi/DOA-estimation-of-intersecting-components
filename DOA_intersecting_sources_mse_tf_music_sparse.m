@@ -10,7 +10,7 @@ clear all;
 LL=500;
 
 % Signal model%
-addpath 'D:\tfsa_5-5\windows\win64_bin\'
+%addpath 'D:\tfsa_5-5\windows\win64_bin\'
 index=0;
 n=0:127;
 % Number of SOurces

@@ -23,10 +23,6 @@ s3=exp(2*pi*1i*(0.4*n+0.1*n.^2/(2*128)-0.5*n.^3/(128*128*3)));%+exp(2*pi*1i*(0.4
 s4=exp(2*pi*1i*(0.45*n+0.1*n.^2/(2*128)-0.1*n.^3/(128*128*3)));
 
 perc=0.4;
-% s1=exp(2*pi*1i*(0.05*n+0*0.2*n.^2/(2*128)));
-% s2=exp(2*pi*1i*(0.1*n+0.3*n.^2/(2*128)));
-% s3=exp(2*pi*1i*(0.4*n-0.3*n.^2/(2*128)));
-% s4=exp(2*pi*1i*(0.45*n-0.2*n.^2/(2*128)));
 
 for SNR=-5:1:10
     
@@ -61,24 +57,6 @@ for SNR=-5:1:10
         
         
         ss= multi_sensor_source_separation(X, N_C, 2,N_sensors);
-        
-        
-        
-        
-        
-        %K=K1;
-        %
-        
-        
-        
-        
-        
-        
-        
-        
-        %%%%%%%%  BSS code  ends
-        
-        
         
         %%DOA estimation
         IP=1;
@@ -162,23 +140,3 @@ plot(SNR(1:5:end),10*(log10(snr_mse_tf(1:5:end))),'r','linewidth',2);
 xlabel('Signal to Noise Ratio');
 ylabel('Mean Square Error (dB)');
 legend('The Proposed Algorithm','Time-frequency Music');
-% axis([min(snr) max(snr)  -50  0])
-
-%    snr_mse(1,5)=snr_mse(1,4);
-%
-%     figure;
-%     plot(SNR(1:end),1*((snr_mse(1,1:end))),'-ro','linewidth',2);
-% %
-%     hold on;
-%     plot(SNR(1:end),1*((snr_mse(2,1:end))),':gs','linewidth',2);
-%
-%     hold on;
-%     plot(SNR(1:end),1*((snr_mse(3,1:end))),'-.b+','linewidth',2);
-%    hold on;
-%    plot(SNR(3:end),1*((snr_mse(4,3:end))),'--md','linewidth',2);
-%
-%%    xlabel('Signal to Noise Ratio');
-%    ylabel('Mean Square Error (dB)');
-
-
-
