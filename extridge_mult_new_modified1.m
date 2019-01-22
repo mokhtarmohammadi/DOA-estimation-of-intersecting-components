@@ -1,18 +1,8 @@
 function [fidexmult] = extridge_mult_new_modified1(Sig, num, delta)
-% Extract ridges for multi-component signals.
-% In each iteration,the signal component associated with the extrated ridge is
-% reconstructed by the ICCD and then removed from the original signal so
-% that the ridge curves of other signal components with smaller energies
-% can be extracted in the subsequent iterations.
 %%%%%%%%%%%%%%%%%%%%%%%    input      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Sig£ºmeasured signal,a row vector
-% SampFreq: sampling frequency
+% SigÂ£Âºmeasured signal,a row vector
 % num: the number of the signal components
-% delta£ºmaximum allowable frequency variation between two consecutive points
-% orderIF: the order of the Fourier model used for smoothing the extracted ridge curves
-% bw£ºthe bandwidth of the ICCD (unit£ºHz); herein the ICCD can be regarded as a time-frequency filtering technique
-% Nfrebin,window are two parameters for implementing the STFT
-% alpha£ºTikhonov regularization parameter for ICCD.
+% deltaÂ£Âºmaximum allowable frequency variation between two consecutive points
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%  output   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % fidexmult: obtained ridge index for multi-component signals
